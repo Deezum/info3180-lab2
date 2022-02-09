@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+    <div id = "container">
+        <div id="main">
+            <div id = "top">
+                <div id = "photo">
+                    <img src="{{url_for('static', filename = 'picofme.jpg')}}" alt="Picture of me">
+                </div>
+
+                <div id = "details">
+                    <h2>De'Anna-Shanae Beadle</h2>
+                    <p>@dvaxxa</p>
+                    <p>Kingston,Jamaica</p>
+                    <p>Joined {{ date }}</p>
+                </div>
+            </div>
+
+            <div id = "bottom">
+                <div id = "bio">
+                    <p>I am a second year student of the UWI currently pursuing a double major in Software Engineering and Biotechnology. In my free time I enjoy cooking and listening to music. In the future i hope to work in the field of technology or in biotechnology as a researcher. </p>
+                </div>
+
+                <div id = "activity">
+                    <div id="posts"><p><b>1</b><br>Posts</p></div>
+                    <div id="following"><p><b>540</b><br>Following</p></div>
+                    <div id="followers"><p><b>800</b><br>Followers</p></div>
+                </div>
+
+                <div id = "follow-btn">
+                    <button>Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
